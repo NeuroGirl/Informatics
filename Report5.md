@@ -41,8 +41,37 @@ files_to_check=$(git diff --cached --name-only --diff-filter=ACM | grep '\.txt$'
 
 ### Задача 2 - Использование Git Flow в проекте
 
+Устанавливаем git flow на локальной машине и инициализируем его в корне нашего репозитория
 
+![Screenshot from 2024-12-10 13-26-10](https://github.com/user-attachments/assets/e98d22d9-152c-4fdb-aeed-efa1a14ac9c3)
 
+Создаем ветку новой функциональности по команде из задания лабораторной, создаем файл task_manager.py и коммитим его
 
+![Screenshot from 2024-12-10 13-24-24](https://github.com/user-attachments/assets/8ca2d181-5d36-485c-89b6-5a0a64cd1350)
 
+Предположим, что мы написали какую-то функцию. Завершаем фичу и объединяем текущую ветку с веткой develop
 
+![Screenshot from 2024-12-10 13-27-06](https://github.com/user-attachments/assets/c73f23a9-efe3-4bc9-9da5-8b82f887fdc4)
+
+Начинаем создание релиза
+
+![Screenshot from 2024-12-10 13-28-21](https://github.com/user-attachments/assets/3a2736f2-9200-4d9c-ad38-99746fe1a53f)
+
+Представим, что вносим изменения, связанные с релизом: создаем файл versions.txt и коммитим его
+
+![Screenshot from 2024-12-10 13-30-04](https://github.com/user-attachments/assets/fde74f12-5b1f-4484-9f75-49928c705cbd)
+
+Завершаем релиз и объединяем его ветку с основной
+
+![Screenshot from 2024-12-10 13-33-40](https://github.com/user-attachments/assets/738b5d4a-4fa5-45ad-a4fd-c55fb746d0b7)
+
+Несмотря на отсутствие конфликтов в ветках, содаем hotfix 
+
+![Screenshot from 2024-12-10 13-35-17](https://github.com/user-attachments/assets/3eae0c21-af3b-4bf5-9473-626da6d3a5a6)
+
+Представляем что вносим изменения для исправления каких-то ошибок (создаем файл file_with_error) и коммитим их, после 
+чего закрываем hotfix и объединяем текущую ветку с основной
+
+![Screenshot from 2024-12-10 13-37-56](https://github.com/user-attachments/assets/b4868638-4b05-4b33-8830-817c5a2efce5)
+
+После этого пушим все изменения в ветки develop и main (отправляем изменения в удаленный репозиторий)
