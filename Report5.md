@@ -74,4 +74,11 @@ files_to_check=$(git diff --cached --name-only --diff-filter=ACM | grep '\.txt$'
 
 ![Screenshot from 2024-12-10 13-37-56](https://github.com/user-attachments/assets/b4868638-4b05-4b33-8830-817c5a2efce5)
 
-После этого пушим все изменения в ветки develop и main (отправляем изменения в удаленный репозиторий)
+После этого пушим все изменения в ветки develop и main (отправляем изменения в удаленный репозиторий). Успешность этого шага проверяем,
+заходя в наш аккаунт GitHub и открывая нужный репозиторий
+
+![image](https://github.com/user-attachments/assets/ba4ca7f5-0ad5-4c6b-921d-31b59d564cb7)
+
+Следовательно задача успешно завершена.
+
+Вывод: Мы познакомились с оновными командами Git, Git Hooks, Git Flow и отработали навыки по их применению.
